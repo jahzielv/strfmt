@@ -8,7 +8,7 @@
  * @param fmt A format string, with placeholders in the following format: `{[0-9]+}`
  * @param replacements Variable number of strings to insert into the format string. Indexed from 0 from left to right.
  */
-export function strfmt(fmt: string, ...replacements: any[]) {
+export default function strfmt(fmt: string, ...replacements: any[]) {
   let ret = fmt;
   replacements.forEach((e, i) => {
     let printVal = e;
